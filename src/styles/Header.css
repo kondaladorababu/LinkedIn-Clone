@@ -37,6 +37,25 @@
   background: none;
 }
 
-.header_right{
+.header_right {
   display: flex;
+}
+
+@media (max-width: 600px) {
+
+  .header_logo {
+    display: none;
+  }
+
+  .header_search {
+    height: 15px;
+    width: 65vw;
+  }
+
+  .header_right {
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+  }
 }

@@ -8,17 +8,52 @@
 }
 
 .headerOption:hover {
-    color: black;
+  color: black;
 }
 
-.headerOption_icon{
+.headerOption_icon {
+  object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.headerOption_title {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .avatar_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+
+  .avatar_mobile_icon {
+    margin-right: 0;
+  }
+
+  .avatar_mobileTitle {
+    display: none;
+  }
+
+  .headerOption_icon {
     object-fit: contain;
-    height: 25px !important;
-    width: 25px !important;
+    height: 30px !important;
+    width: 30px !important;
+  }
 
-}
+  .Messaging {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 13px;
+    margin-top: 13px;
+  }
 
-.headerOption_title{
-    font-size: 12px;
-    font-weight: 400;
+  .MessagingTitle {
+    display: none;
+  }
 }
